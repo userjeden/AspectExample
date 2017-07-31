@@ -63,13 +63,12 @@ public class BookServiceImplTest {
     public void testShouldThrowBookNotNullIdException() {
     	
     	// given
-    	cleanCacheContent();
     	final BookTo bookToSave = new BookTo();
     	bookToSave.setId(22L);
     	
     	// when
-    	bookService.saveBook(bookToSave);
     	cleanCacheContent();
+    	bookService.saveBook(bookToSave);
     	
     	// then
     	fail("test should throw BookNotNullIdException");

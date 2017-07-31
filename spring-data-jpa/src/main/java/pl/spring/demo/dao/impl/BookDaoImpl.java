@@ -1,4 +1,5 @@
 package pl.spring.demo.dao.impl;
+import pl.spring.demo.annotation.AutoIncrementId;
 import pl.spring.demo.annotation.NullableId;
 import pl.spring.demo.dao.BookDao;
 import pl.spring.demo.to.BookTo;
@@ -33,6 +34,7 @@ public class BookDaoImpl implements BookDao {
 
     @Override
     @NullableId
+    @AutoIncrementId
     public BookTo save(BookTo book) {
     	
 //    	  // MOVED TO ASPECT

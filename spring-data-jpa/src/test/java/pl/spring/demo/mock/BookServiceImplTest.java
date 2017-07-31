@@ -16,6 +16,7 @@ public class BookServiceImplTest {
 
     @InjectMocks
     private BookServiceImpl bookService;
+    
     @Mock
     private BookDao bookDao;
 
